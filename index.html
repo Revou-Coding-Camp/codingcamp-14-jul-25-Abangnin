@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Mini Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/assets/Logo Coba Coba.png" alt="Logo Coba Coba" width="65">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#welcome-section">Home</a></li>
+                <li><a href="#our-profile">Our Profile</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-section" id="welcome-section">
+            <h1>Halo [Nama dari Popup]</h1>
+            <p>Selamat Datang di Website ini</p>
+            <div class="banner-placeholder"></div>
+        </section>
+
+        <section class="profile-summary" id="our-profile">
+            <h2>Our Profile</h2>
+                <p class="profile-tagline">Mengenal Kami Lebih Dekat</p>
+                <p class="profile-description">
+                    Kami adalah perusahaan yang berdedikasi untuk memberikan solusi inovatif dan berkualitas tinggi. Sejak didirikan, kami berkomitmen untuk membangun hubungan yang kuat dengan klien kami melalui integritas, kolaborasi, dan keunggulan.
+                </p>
+        </section>
+
+        <section class="message-us" id="message-us">
+            <h2>Message Us</h2>
+            <div class="form-wrapper">
+                <form id="message-form">
+                    <div class="form-group">
+                        <label for="nama">Nama :</label>
+                        <input type="text" id="nama" name="nama">
+                    </div>
+                    <div class="form-group">
+                        <label for="tanggal-lahir">Tanggal Lahir :</label>
+                        <input type="date" id="tanggal-lahir" name="tanggal-lahir">
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin :</label>
+                        <div class="radio-group">
+                            <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-laki">
+                            <label for="laki-laki">Laki-laki</label>
+                            <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan">
+                            <label for="perempuan">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group pesan-group">
+                        <label for="pesan">Pesan :</label>
+                        <textarea id="pesan" name="pesan" rows="4"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+
+                <div class="output-container">
+                    <p><strong>Current Time:</strong> <span id="current-time">Fri Jun 17 2022 11:27:28 GMT+0100</span></p>
+                    <p><strong>Nama:</strong> <span id="output-nama">Harfi Novian</span></p>
+                    <p><strong>Tanggal Lahir:</strong> <span id="output-tanggal-lahir">01/11/1995</span></p>
+                    <p><strong>Jenis Kelamin:</strong> <span id="output-jenis-kelamin">Laki-laki</span></p>
+                    <p><strong>Pesan:</strong> <span id="output-pesan">Lagi belajar membuat Website</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created By Muhammad Naufal Arbanin, narbanin@upi.edu</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
