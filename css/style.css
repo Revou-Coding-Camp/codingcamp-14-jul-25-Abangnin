@@ -10,19 +10,17 @@ body {
     color: #333333;
 }
 
-/* DIUBAH: Aturan ini sekarang hanya untuk <main> */
 main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0; /* Padding vertikal saja */
+    padding: 20px 0;
 }
 
-/* DITAMBAHKAN: Aturan untuk pembungkus konten di dalam header/footer */
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px; /* Padding kiri-kanan untuk konten */
+    padding: 0 20px;
     display: flex; 
     justify-content: space-between;
     align-items: center;
@@ -31,11 +29,11 @@ main {
 
 /* 1. Header & Navigation Styling */
 header {
-    display: flex; /* Dibiarkan flex untuk membentang */
+    display: flex;
     align-items: center;
     background-color: #0D284F;
     color: white;
-    padding: 15px 0; /* DIUBAH: Padding vertikal saja */
+    padding: 15px 0;
 }
 
 .logo {
@@ -85,7 +83,7 @@ nav ul li a:hover {
 
 .welcome-section {
     text-align: center;
-    margin-top: 0; /* Kartu pertama tidak perlu margin atas */
+    margin-top: 0;
 }
 
 .banner-placeholder {
@@ -121,20 +119,11 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
-.features-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-}
+/* DIHAPUS: Blok untuk .features-container & .feature-item karena tidak dipakai */
 
-.feature-item {
-    flex-basis: 250px;
-}
-
+/* DIUBAH: Aturan untuk judul Message Us agar terpusat */
 .message-us h2 {
-    text-align: left; 
+    text-align: center; 
     margin-bottom: 40px;
 }
 
@@ -240,13 +229,13 @@ nav ul li a:hover {
 
 /* 5. Footer Styling */
 footer {
-    padding: 20px 0; /* DIUBAH: Padding vertikal saja */
+    padding: 20px 0;
     background-color: #0D284F;
     color: white;
     margin-top: 20px;
 }
 
-/* DITAMBAHKAN: Aturan khusus untuk container di footer */
+/* DIUBAH: Aturan khusus untuk container di footer agar di tengah */
 footer .container {
-    justify-content: flex-end; /* Agar teks tetap di kanan */
+    justify-content: center; /* Agar teks di tengah */
 }
