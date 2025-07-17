@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins';
     margin: 0;
     padding: 0;
     background-color: #a8a8a8;
@@ -60,15 +60,16 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    background-color: #4A90E2;
-    padding: 8px 18px;
+    background-color: transparent; 
+    padding: 8px 0; 
     border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #357ABD;
+    background-color: transparent; 
+    border-bottom: 2px solid #4A90E2; 
 }
 
 
@@ -117,6 +118,7 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 0 auto 40px auto;
     line-height: 1.6;
+    text-align: left;
 }
 
 /* DIHAPUS: Blok untuk .features-container & .feature-item karena tidak dipakai */
