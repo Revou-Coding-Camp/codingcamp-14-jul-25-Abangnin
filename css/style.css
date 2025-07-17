@@ -10,19 +10,32 @@ body {
     color: #333333;
 }
 
-header, main, footer {
+/* DIUBAH: Aturan ini sekarang hanya untuk <main> */
+main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 0; /* Padding vertikal saja */
 }
 
-header {
-    display: flex;
+/* DITAMBAHKAN: Aturan untuk pembungkus konten di dalam header/footer */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Padding kiri-kanan untuk konten */
+    display: flex; 
     justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* 1. Header & Navigation Styling */
+header {
+    display: flex; /* Dibiarkan flex untuk membentang */
     align-items: center;
     background-color: #0D284F;
     color: white;
-    padding: 15px 30px;
+    padding: 15px 0; /* DIUBAH: Padding vertikal saja */
 }
 
 .logo {
@@ -60,9 +73,11 @@ nav ul li a:hover {
     background-color: #357ABD;
 }
 
+
+/* 2. Welcome Section & Card Styling */
 .welcome-section, .profile-summary, .message-us {
     background-color: white;
-    padding: 30px 30px;
+    padding: 50px 30px;
     margin-top: 30px; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -70,7 +85,7 @@ nav ul li a:hover {
 
 .welcome-section {
     text-align: center;
-    margin-top: 0;
+    margin-top: 0; /* Kartu pertama tidak perlu margin atas */
 }
 
 .banner-placeholder {
@@ -82,6 +97,7 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
+/* 3. Our Profile Summary Section */
 .profile-summary {
     text-align: center;
 }
@@ -118,10 +134,11 @@ nav ul li a:hover {
 }
 
 .message-us h2 {
-    text-align: center; 
+    text-align: left; 
     margin-bottom: 40px;
 }
 
+/* 4. Form Styling */
 .form-wrapper {
     display: flex;
     gap: 40px;
@@ -221,10 +238,15 @@ nav ul li a:hover {
     margin: 0 0 10px 0;
 }
 
+/* 5. Footer Styling */
 footer {
-    text-align: center;
-    padding: 20px 30px;
+    padding: 20px 0; /* DIUBAH: Padding vertikal saja */
     background-color: #0D284F;
     color: white;
     margin-top: 20px;
+}
+
+/* DITAMBAHKAN: Aturan khusus untuk container di footer */
+footer .container {
+    justify-content: flex-end; /* Agar teks tetap di kanan */
 }
