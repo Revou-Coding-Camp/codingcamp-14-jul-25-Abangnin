@@ -74,7 +74,7 @@ nav ul li a:hover {
 }
 
 .banner-placeholder {
-    background-image: url('/assets/hero.jpg');
+    background-image: url('../assets/hero.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
