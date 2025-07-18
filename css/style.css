@@ -27,7 +27,6 @@ main {
     box-sizing: border-box;
 }
 
-/* 1. Header & Navigation Styling */
 header {
     display: flex;
     align-items: center;
@@ -72,8 +71,6 @@ nav ul li a:hover {
     border-bottom: 2px solid #4A90E2; 
 }
 
-
-/* 2. Welcome Section & Card Styling */
 .welcome-section, .profile-summary, .message-us {
     background-color: white;
     padding: 50px 30px;
@@ -96,7 +93,6 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
-/* 3. Our Profile Summary Section */
 .profile-summary {
     text-align: center;
 }
@@ -118,18 +114,32 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 0 auto 40px auto;
     line-height: 1.6;
-    text-align: left;
+    text-align: center;
 }
 
-/* DIHAPUS: Blok untuk .features-container & .feature-item karena tidak dipakai */
+.vision-mission-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    margin-top: 40px; 
+    flex-wrap: wrap; 
+}
 
-/* DIUBAH: Aturan untuk judul Message Us agar terpusat */
+.vm-item {
+    flex-basis: 350px; 
+    text-align: center; 
+}
+
+.vm-item h3 {
+    color: #0D284F; 
+    margin-bottom: 10px;
+}
+
 .message-us h2 {
     text-align: center; 
     margin-bottom: 40px;
 }
 
-/* 4. Form Styling */
 .form-wrapper {
     display: flex;
     gap: 40px;
@@ -156,7 +166,7 @@ nav ul li a:hover {
 .form-group label {
     font-weight: bold;
     color: #555;
-    width: 120px;
+    width: 140px;
     flex-shrink: 0;
     text-align: right;
 }
@@ -199,8 +209,8 @@ nav ul li a:hover {
 }
 
 #message-form button {
-    margin-left: 135px;
-    width: calc(100% - 135px);
+    margin-left: 155px;
+    width: calc(100% - 155px);
     padding: 12px;
     background-color: #4A90E2;
     color: white;
@@ -229,7 +239,6 @@ nav ul li a:hover {
     margin: 0 0 10px 0;
 }
 
-/* 5. Footer Styling */
 footer {
     padding: 20px 0;
     background-color: #0D284F;
@@ -237,7 +246,6 @@ footer {
     margin-top: 20px;
 }
 
-/* DIUBAH: Aturan khusus untuk container di footer agar di tengah */
 footer .container {
-    justify-content: center; /* Agar teks di tengah */
+    justify-content: center;
 }
