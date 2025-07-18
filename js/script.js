@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const welcomeParagraph = document.querySelector('.welcome-section p');
     
     if (welcomeHeading) {
-        welcomeHeading.textContent = `Halo ${userName}`;
+        welcomeHeading.textContent = `Halo ${userName}!`;
     }
     if (welcomeParagraph) {
         welcomeParagraph.textContent = "Selamat Datang di Website ini";
